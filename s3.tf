@@ -5,7 +5,7 @@ resource "aws_s3_bucket" "s3_bucket" {
 }
 
 resource "aws_s3_bucket_object" "s3_object" {
-  bucket = aws_s3_bucket.bucket.id
+  bucket = aws_s3_bucket.s3_bucket.id
   key    = var.lambda_source_s3_key
   source = var.lambda_source
 }

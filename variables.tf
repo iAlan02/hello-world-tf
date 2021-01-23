@@ -11,3 +11,8 @@ variable "lambda_source" {}
 
 #api-gateway
 variable "api_gateway_name" {}
+
+#iam
+variable "policy_name" {}
+variable "role_name" {}
+variable "role_policy_attachment" {}
